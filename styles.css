@@ -4,6 +4,7 @@ body {
   margin: 0;
   padding: 0;
 }
+
 .promo-banner {
   display: flex;
   justify-content: space-between;
@@ -15,16 +16,19 @@ body {
   max-width: 1200px;
   margin: 40px auto;
 }
+
 .text-section {
   flex: 1;
   padding-right: 40px;
 }
+
 .text-section h1 {
   font-size: 40px;
   font-weight: bold;
   margin: 0;
   color: #333;
 }
+
 .text-section button {
   background-color: #007bff;
   color: #fff;
@@ -34,12 +38,14 @@ body {
   border-radius: 8px;
   cursor: pointer;
 }
+
 .image-section img {
   max-width: 500px;
   width: 100%;
   height: auto;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .title {
   font-size: 40px;
   font-weight: bold;
@@ -47,17 +53,20 @@ body {
   margin: 0;
   line-height: 1.2;
 }
+
 .subtitle {
   font-size: 24px;
   color: #555;
   margin: 20px 0 20px;
 }
+
 .tagline {
   font-size: 18px;
   color: #000;
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
 .listen-now {
   background-color: #007bff;
   color: #fff;
@@ -68,25 +77,30 @@ body {
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .text-section h1.podcast-highlight {
   font-size: 64px;
   font-weight: 900;
   color: #007bff;
 }
+
 .listen-now:hover {
   transform: scale(1.05);
   box-shadow: 0 0 10px rgba(0, 123, 255, 0.4);
 }
+
 .image-section img:hover {
   transform: scale(1.05);
   box-shadow: 0 0 10px rgba(0, 123, 255, 0.4);
 }
+
 header {
   text-align: center;
   padding: 20px;
   background-color: #007bff;
   color: white;
 }
+
 footer {
   text-align: center;
   padding: 20px;
@@ -94,6 +108,7 @@ footer {
   color: white;
   margin-top: 60px;
 }
+
 #podcast-gallery {
   max-width: 1200px;
   margin: 40px auto;
@@ -101,6 +116,7 @@ footer {
   background-color: #fff;
   border-radius: 16px;
 }
+
 .featured {
   position: relative;
   border: 2px solid gold;
@@ -118,15 +134,15 @@ footer {
   border-radius: 4px;
   font-size: 0.9em;
 }
+
 .gallery {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
-  gap: 20px;
+  justify-content: center;   /* centered items */
+  gap: 30px;                 /* more spacing */
   padding: 20px;
-  align-items: stretch; 
+  align-items: stretch;      /* equal height cards */
 }
-
 
 .podcast-item img,
 .podcast-item iframe {
@@ -154,11 +170,11 @@ footer {
   .gallery {
     justify-content: center;
   }
-
   .podcast-item {
     margin: 0 auto;
   }
 }
+
 .custom-player {
   width: 100%;
   max-width: 100%;
@@ -175,61 +191,34 @@ footer {
 .podcast-item {
   flex: 1 1 300px;
   max-width: 350px;
-  min-width: 280px; 
-  margin-bottom: 20px;
-  padding: 15px;
+  min-width: 280px;
+  margin-bottom: 30px;
+  padding: 20px;
   border: 2px solid #ddd;
-  border-radius: 8px;
+  border-radius: 10px;
   background: #fafafa;
   position: relative;
   box-sizing: border-box;
-   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .podcast-item:hover {
-  transform: scale(1.03); /* slight zoom */
-  box-shadow: 0 0 15px gold; /* subtle glow */
-}
-.reaction-box {
-  flex: 1 1 35%;
-  min-width: 250px;
-  background: #e6f0ff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 123, 255, 0.2);
-}
-
-.reaction-box h4 {
-  margin-bottom: 15px;
-  font-size: 18px;
-  color: #007bff;
-}
-
-.reaction-btn {
-  display: block;
-  width: 100%;
-  margin-bottom: 10px;
-  padding: 10px 15px;
-  font-size: 16px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.reaction-btn:hover {
-  background-color: #0056b3;
+  transform: translateY(-5px) scale(1.03); /* subtle lift + zoom */
+  box-shadow: 0 8px 20px rgba(0, 123, 255, 0.25); /* softer glow */
 }
 
 .comment-box {
-  flex: 1 1 35%;
-  min-width: 250px;
+  flex: 1 1 100%;
   background: #fff;
   padding: 20px;
   border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0, 123, 255, 0.2);
+  box-shadow: 0 0 12px rgba(0, 123, 255, 0.15);
   font-family: "Arial", sans-serif;
+  transition: box-shadow 0.3s ease;
+}
+
+.comment-box:hover {
+  box-shadow: 0 0 18px rgba(0, 123, 255, 0.25);
 }
 
 .comment-box h4 {
@@ -254,19 +243,21 @@ footer {
 .submit-btn {
   display: block;
   margin: 0 auto;
-  background-color: #007bff;
+  background: linear-gradient(90deg, #007bff, #0056b3); /* gradient polish */
   color: white;
   border: none;
-  padding: 10px 18px;
-  font-size: 15px;
-  border-radius: 6px;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
 }
 
 .submit-btn:hover {
-  background-color: #0056b3;
+  transform: scale(1.05);
+  box-shadow: 0 0 12px rgba(0, 123, 255, 0.4);
 }
+
 .podcast-row {
   display: flex;
   flex-wrap: wrap;
@@ -274,6 +265,7 @@ footer {
   align-items: flex-start;
   margin-top: 40px;
 }
+
 .side-message {
   flex: 1 1 25%;
   min-width: 200px;
@@ -286,12 +278,13 @@ footer {
   color: #333;
   text-align: center;
 }
+
 .partner-form {
   margin-top: 40px;
   padding: 30px;
-  background-color: lightblue;
+  background: linear-gradient(135deg, #e6f7ff, #cce0ff); /* softer gradient */
   border-radius: 12px;
-  box-shadow: 0 0 10px lightblue;
+  box-shadow: 0 0 15px rgba(0, 123, 255, 0.2);
   font-family: Arial, sans-serif;
 }
 
@@ -325,158 +318,4 @@ footer {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 10px;
-  margin-bottom: 20px;
-}
-
-.partner-form textarea {
-  resize: none;
-}
-
-.submit-btn {
-  display: block;
-  margin: 0 auto;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  padding: 12px 20px;
-  font-size: 16px;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.submit-btn:hover {
-  background-color: #0056b3;
-}
-.white-line {
-  border: 0;
-  height: 1px;
-  background: white;
-  margin: 20px 0;
-}
-.orange-line {
-  border: 0;
-  height: 1px;
-  background: orange;
-  margin: 20px 0;
-}
-@media (max-width: 900px) {
-  .podcast-icon {
-    display: none;
-  }
-}
-/* Tablet adjustments */
-@media (max-width: 1024px) {
-  .promo-banner {
-    flex-direction: column;
-    padding: 40px 30px;
-    text-align: center;
-  }
-
-  .text-section {
-    padding-right: 0;
-    margin-bottom: 20px;
-  }
-
-  .text-section h1 {
-    font-size: 32px;
-  }
-
-  .text-section h1.podcast-highlight {
-    font-size: 48px;
-  }
-
-  .subtitle {
-    font-size: 20px;
-  }
-
-  .tagline {
-    font-size: 16px;
-  }
-
-  .image-section img {
-    max-width: 100%;
-  }
-}
-
-/* Phone adjustments */
-@media (max-width: 600px) {
-  .promo-banner {
-    padding: 20px;
-    margin: 20px;
-  }
-
-  .text-section h1 {
-    font-size: 24px;
-  }
-
-  .text-section h1.podcast-highlight {
-    font-size: 32px;
-  }
-
-  .subtitle {
-    font-size: 18px;
-  }
-
-  .tagline {
-    font-size: 14px;
-  }
-
-  .listen-now {
-    width: 100%;
-    font-size: 14px;
-    padding: 12px;
-  }
-
-  #podcast-gallery {
-    padding: 20px;
-    margin: 20px;
-  }
-
-  .gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-  }
-
-  .podcast-item {
-    flex: 1 1 300px;
-    max-width: 350px;
-    box-sizing: border-box;
-    margin-bottom: 20px;
-  }
-
-  .partner-form {
-    padding: 20px;
-  }
-
-  .radio-group,
-  .checkbox-group {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* Extra small screens */
-@media (max-width: 400px) {
-  .text-section h1 {
-    font-size: 20px;
-  }
-
-  .text-section h1.podcast-highlight {
-    font-size: 26px;
-  }
-
-  .subtitle {
-    font-size: 16px;
-  }
-
-  .tagline {
-    font-size: 12px;
-  }
-
-  .listen-now {
-    font-size: 12px;
-    padding: 10px;
-  }
-}
+  margin-bottom
