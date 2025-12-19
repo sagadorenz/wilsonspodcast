@@ -227,14 +227,13 @@ body {
     max-width: 100%;
   }
 
-  /* Force gallery into 2 columns */
-  .gallery {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+.gallery {
+    justify-content: center;
     gap: 25px;
   }
 
   .podcast-item {
-    max-width: 100%; /* let grid handle sizing */
+    flex: 1 1 45%; /* roughly 2 per row */
+    max-width: 48%;
   }
 }
