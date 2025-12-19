@@ -176,6 +176,7 @@ footer {
   flex: 1 1 300px;
   max-width: 350px;
   min-width: 280px; 
+  margin-bottom: 20px;
   padding: 15px;
   border: 2px solid #ddd;
   border-radius: 8px;
