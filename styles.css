@@ -124,18 +124,9 @@ footer {
   justify-content: flex-start;
   gap: 20px;
   padding: 20px;
+  align-items: stretch; 
 }
 
-.podcast-item {
-  flex: 1 1 300px;
-  max-width: 350px;
-  padding: 15px;
-  border: 2px solid #ddd;
-  border-radius: 8px;
-  background: #fafafa;
-  position: relative;
-  box-sizing: border-box;
-}
 
 .podcast-item img,
 .podcast-item iframe {
@@ -184,6 +175,7 @@ footer {
 .podcast-item {
   flex: 1 1 300px;
   max-width: 350px;
+  min-width: 280px; 
   padding: 15px;
   border: 2px solid #ddd;
   border-radius: 8px;
@@ -437,12 +429,17 @@ footer {
   }
 
   .gallery {
-    flex-direction: column;
-    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
   }
 
   .podcast-item {
-    max-width: 100%;
+    flex: 1 1 300px;
+    max-width: 350px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
   }
 
   .partner-form {
