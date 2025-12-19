@@ -25,101 +25,78 @@
           src="podcast-image.png"
           class="podcast-icon"
           alt="podcast-icon"
-          onclick="document.getElementById('podcast-gallery').scrollIntoView({
-        behavior: 'smooth' })"
+          onclick="document.getElementById('podcast-gallery').scrollIntoView({behavior: 'smooth'})"
           style="cursor: pointer"
         />
       </div>
     </div>
+
     <section id="podcast-gallery">
       <h2>Podcast Gallery</h2>
       <div class="gallery">
+
+        <!-- Episode 1 -->
         <div class="podcast-item featured">
-          <video
-            class="custom-player"
-            preload="metadata"
-            poster="episode1-thumbnail.png"
-          >
+          <video class="custom-player" preload="metadata" poster="episode1-thumbnail.png">
             <source src="reduce aalcoholismm.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
           <h3>Episode 1: Finding Inspiration</h3>
-          <p>
-            A deep talk about <strong>motivation</strong> and overcoming
-            challenges.
-          </p>
-
+          <p>A deep talk about <strong>motivation</strong> and overcoming challenges.</p>
           <audio controls>
             <source src="episode01.mp3" type="audio/mpeg" />
           </audio>
-          <br />
-          <br />
+          <br /><br />
           <form action="https://formspree.io/f/xrezbyyb" method="POST" class="comment-box" target="_blank">
             <h4>Share your Reaction:</h4>
-            <textarea placeholder="">share it, and submit (It works, try it)</textarea>
-            <button class="submit-btn">Submit</button>
+            <textarea name="message" placeholder="share it, and submit (It works, try it)" required></textarea>
+            <input type="hidden" name="episode" value="Episode 1" />
+            <button type="submit" class="submit-btn">Submit</button>
           </form>
-          </div>
         </div>
 
         <!-- Episode 2 -->
         <div class="podcast-item">
-          <video
-            class="custom-player"
-            preload="metadata"
-            poster="episode2-thumbnail.png"
-          >
+          <video class="custom-player" preload="metadata" poster="episode2-thumbnail.png">
             <source src="videoplayback.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
           <h3>Episode 2: How to Get Straight A's?</h3>
-          <p>
-            A deep talk about getting <strong>straight A's.</strong> Watch to
-            get straight A's.
-          </p>
-
+          <p>A deep talk about getting <strong>straight A's.</strong> Watch to get straight A's.</p>
           <audio controls>
             <source src="episode1.mp3" type="audio/mpeg" />
           </audio>
-          <br />
-          <br />
+          <br /><br />
           <form action="https://formspree.io/f/xrezbyyb" method="POST" class="comment-box" target="_blank">
             <h4>Share your Reaction:</h4>
-            <textarea placeholder="">share it, and submit (It works, try it)</textarea>
-            <button class="submit-btn">Submit</button>
+            <textarea name="message" placeholder="share it, and submit (It works, try it)" required></textarea>
+            <input type="hidden" name="episode" value="Episode 2" />
+            <button type="submit" class="submit-btn">Submit</button>
           </form>
-          </div>
         </div>
 
         <!-- Episode 3 -->
         <div class="podcast-item">
-          <video
-            class="custom-player"
-            preload="metadata"
-            poster="episode4-thumbnail.png"
-          >
+          <video class="custom-player" preload="metadata" poster="episode4-thumbnail.png">
             <source src="videoplayback1.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
           <h3>Episode 3: How to Get A Girlfriend?</h3>
-          <p>
-            A deep talk about getting a <strong>girlfriend.</strong> Watch to
-            get a girlfriend.
-          </p>
-
+          <p>A deep talk about getting a <strong>girlfriend.</strong> Watch to get a girlfriend.</p>
           <audio controls>
             <source src="episode2.mp3" type="audio/mpeg" />
           </audio>
-          <br />
-          <br />
+          <br /><br />
           <form action="https://formspree.io/f/xrezbyyb" method="POST" class="comment-box" target="_blank">
             <h4>Share your Reaction:</h4>
-            <textarea placeholder="">share it, and submit (It works, try it)</textarea>
-            <button class="submit-btn">Submit</button>
+            <textarea name="message" placeholder="share it, and submit (It works, try it)" required></textarea>
+            <input type="hidden" name="episode" value="Episode 3" />
+            <button type="submit" class="submit-btn">Submit</button>
           </form>
-          </div>
         </div>
+
       </div>
+
       <div class="podcast-row">
         <div class="side-message">
           <hr class="orange-line" />
@@ -128,19 +105,14 @@
         </div>
       </div>
 
+      <!-- Partner Form -->
       <form action="https://formspree.io/f/xrezbyyb" method="POST" class="partner-form" target="_blank">
         <h1>Suggest Podcast Topics</h1>
 
-        <label for="name"></label>
-        <input
-          type="text"
-          id="name"
-          name="name"
-          placeholder="spill it please"
-        />
+        <input type="text" id="name" name="name" placeholder="spill it please" required />
 
         <h3>What Podcast Theme You Like the Most?</h3>
-        <select>
+        <select name="theme" required>
           <option>Student Life and Success</option>
           <option>Social Issues & Awareness</option>
           <option>About the Bible</option>
@@ -150,69 +122,29 @@
 
         <h3>What Do You Like the Most In Podcast's?</h3>
         <div class="radio-group">
-          <label
-            ><input type="radio" name="partner_pref" value="maganda" />
-            Funny</label
-          >
-          <label
-            ><input type="radio" name="partner_pref" value="poge" />
-            Informative</label
-          >
-          <label
-            ><input type="radio" name="partner_pref" value="femboy" />
-            Relatable</label
-          >
-          <label
-            ><input type="radio" name="partner_pref" value="bigeyes" />
-            Inspirational</label
-          >
-          <label
-            ><input type="radio" name="partner_pref" value="matangkad" />
-            Authentic</label
-          >
-          <label
-            ><input type="radio" name="partner_pref" value="bantot" />
-            Engaging</label
-          >
-         
+          <label><input type="radio" name="partner_pref" value="Funny" /> Funny</label>
+          <label><input type="radio" name="partner_pref" value="Informative" /> Informative</label>
+          <label><input type="radio" name="partner_pref" value="Relatable" /> Relatable</label>
+          <label><input type="radio" name="partner_pref" value="Inspirational" /> Inspirational</label>
+          <label><input type="radio" name="partner_pref" value="Authentic" /> Authentic</label>
+          <label><input type="radio" name="partner_pref" value="Engaging" /> Engaging</label>
         </div>
 
         <h3>Select One Podcast You Know:</h3>
         <div class="checkbox-group">
-          <label
-            ><input type="checkbox" name="traits" value="mabait" />
-            The Daily
-          </label>
-          <label
-            ><input type="checkbox" name="traits" value="masipag" />
-            SmartLess
-          </label>
-          <label
-            ><input type="checkbox" name="traits" value="palakaibigan" /> Crime
-            Junkie</label
-          >
-          <label
-            ><input type="checkbox" name="traits" value="mapagsakripisyo" />
-            Serial</label
-          >
-
-          <label
-            ><input type="checkbox" name="traits" value="tapat" />
-            Radiolab</label
-          >
-          <label
-            ><input type="checkbox" name="traits" value="matalino" />
-            Sway</label
-          >
-          
+          <label><input type="checkbox" name="traits" value="The Daily" /> The Daily</label>
+          <label><input type="checkbox" name="traits" value="SmartLess" /> SmartLess</label>
+          <label><input type="checkbox" name="traits" value="Crime Junkie" /> Crime Junkie</label>
+          <label><input type="checkbox" name="traits" value="Serial" /> Serial</label>
+          <label><input type="checkbox" name="traits" value="Radiolab" /> Radiolab</label>
+          <label><input type="checkbox" name="traits" value="Sway" /> Sway</label>
         </div>
 
         <h3>Freewall:</h3>
-        <textarea rows="5" placeholder="you can rant here (submit your changes, it works, try it)"></textarea>
+        <textarea name="freewall" rows="5" placeholder="you can rant here (submit your changes, it works, try it)"></textarea>
 
         <button type="submit" class="submit-btn">Submit</button>
       </form>
-      </div>
     </section>
 
     <footer>
@@ -220,6 +152,7 @@
       <p>&copy; 2025 Wilson's Podcast 6-7 All rights reserved.</p>
       <hr class="white-line" />
     </footer>
+
     <script>
       document.addEventListener("DOMContentLoaded", () => {
         const videos = document.querySelectorAll(".custom-player");
