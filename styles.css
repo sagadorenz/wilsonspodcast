@@ -499,3 +499,30 @@ footer {
     padding: 10px;
   }
 }
+
+
+/* Fix for small screen overflow */
+.podcast-item {
+  overflow: hidden;
+  word-wrap: break-word;
+}
+
+.podcast-item audio,
+.podcast-item form {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+  .podcast-item {
+    flex: 1 1 100%;
+    max-width: 100%;
+    padding: 15px;
+  }
+
+  .comment-box,
+  audio {
+    width: 100%;
+    max-width: 100%;
+  }
+}
